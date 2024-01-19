@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --elements-blue: 0, 0, 51;
+  --elements-white: 204,204,204;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-end-rgb));
+}
+
+.text-element-white {
+  color: rgb(var(--elements-white));
+}
+
+.text-element-blue {
+  color: rgb(var(--elements-blue));
+}
+
+.bg-element-blue{
+  background-color: rgb(var(--elements-blue));
+}
+
+.bg-element-white{
+  background-color: rgb(var(--elements-white));
+}
+
+.divider {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
